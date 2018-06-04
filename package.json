@@ -1,0 +1,38 @@
+{
+  "name": "teacher-record",
+  "version": "1.0.0",
+  "description": "An application for users to record and use data to help students",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpthanh01/teacher-record-fullstack-capstone.git"
+  },
+  "author": "Kevin Pham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpthanh01/teacher-record-fullstack-capstone/issues"
+  },
+  "homepage": "https://github.com/kpthanh01/teacher-record-fullstack-capstone#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.16",
+    "morgan": "^1.9.0",
+    "bcrypt": "^0.8.7",
+    "bcryptjs": "^2.3.0",
+    "mongodb": "^2.2.9",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "unirest": "^0.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "faker": "^4.1.0",
+    "mocha": "^5.1.1"
+  }
+}

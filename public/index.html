@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MyRecipes</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<nav role="navigation">
+		<ul class="nav">
+			<li><a class="homepage-trigger">MyRecipes</a></li>
+			<li id="register-btn"><a class="register-trigger">Register</a></li>
+			<li id="login-btn"><a class="login-trigger">Login</a></li>
+			<li id="logout-btn"><a id="logout-trigger">Logout</a></li>
+			<li id="create-btn"><a id="create-trigger">Create</a></li>
+			<li id="list-btn"><a id="list-trigger">MyList</a></li>
+		</ul>
+		<input id="loggedUserName" type="hidden" name="loggedUserName" value="">
+	</nav>
+	<main>
+		<section id="landing-page">
+			<div class="header-background">
+				<header role="header">
+					<h1 class="title">MyRecipes</h1>
+					<p>Keep and save all your Recipes here!</p>
+				</header>
+			</div>
+			<div class="intro-info">
+				<div>
+					<a class="login-trigger"><img src="./images/login-person.png" alt="account-icon"></a>
+					<p>Sign up and own a personal account and get started on making your recipes</p>
+				</div>
+				<div>
+					<a class="register-trigger"><img src="./images/list-512.png" alt="list-icon"></a>
+					<p>Create, Save, Access, and Update recipes where they are stored in the cloud.</p>
+				</div>
+			</div>
+		</section>
+		<section id="login-page">
+			<form id="login-form" class="login-register-form">
+				<h3>Sign in to your account</h3>
+				<span class="alert"></span>
+				<label for="loginInput">Username</label>
+				<input id="loginInput" class="form-input-account" type="text" name="username" value="">
+				<label for="loginPassword">Password</label>
+				<input id="loginPassword" class="form-input-account" type="password" name="password" value="">
+				<button type="submit">Login</button>
+				<p>If you do not have an account <a class="register-trigger link">Register here</a>!</p>
+			</form>
+		</section>
+		<section id="register-page">
+			<form id="register-form" class="login-register-form">
+				<h3>Create an account</h3>
+				<span class="alert"></span>
+				<label for="registerUsername">Username</label>
+				<input id="registerUsername" class="form-input-account" type="text" name="username" value="" required>
+				<label for="registerPassword">Password</label>
+				<input id="registerPassword" class="form-input-account" type="password" name="password" value="" required>
+				<label for="confirmPassword">Confirm Password</label>
+				<input id="confirmPassword" class="form-input-account" type="password" name="confirm-password" value="" required>
+				<button type="submit">Sign Up</button>
+				<p>If you have an account <a class="login-trigger link">Login here</a>!</p>
+			</form>
+		</section>
+		<section id="list-page">
+			<h1>My List</h1>
+			<h2 class="recipe-count"></h2>
+			<div class="list"></div>
+		</section>
+		<section id="create-page">
+			<form id="recipe-form">
+				<h1 class="form-title">Create Recipe</h1>
+				<fieldset>
+					<label>Name:</label>
+					<input id="create-name" class="recipe-input" type="text" value="" required>
+				</fieldset>
+				<fieldset>
+					<label>Description:</label>
+					<textarea id="create-description" class="recipe-input" rows="8" cols="40"></textarea>
+				</fieldset>
+				<fieldset>
+					<label>Ingredients:</label>
+					<textarea id="create-ingredients" class="recipe-input" rows="8" cols="40"></textarea>
+				</fieldset>
+				<fieldset>
+					<label>Directions:</label>
+					<textarea id="create-directions" class="recipe-input" rows="8" cols="40"></textarea>
+				</fieldset>
+				<button class="save-recipe" type="submit">Save</button>
+			</form>
+		</section>
+		<section id="edit-page">
+			<input id="edit-recipe-id" type="hidden" value="">
+			<form id="edit-form">
+				<h1 class="form-title">Edit Recipe</h1>
+				<fieldset>
+					<label class="edit-recipe-name"></label>
+				</fieldset>
+				<fieldset>
+					<label>Description:</label>
+					<textarea id="edit-description" class="recipe-input" rows="8" cols="40"></textarea>
+				</fieldset>
+				<fieldset>
+					<label>Ingredients:</label>
+					<textarea id="edit-ingredients" class="recipe-input" rows="8" cols="40"></textarea>
+				</fieldset>
+				<fieldset>
+					<label>Directions:</label>
+					<textarea id="edit-directions" class="recipe-input" rows="8" cols="40"></textarea>
+				</fieldset>
+				<button class="save-recipe" type="submit">Save</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<ul class="contact-info">
+			<li><a href="mailto:kpthanh01@gmial.com">Email</a></li>
+			<li><a href="https://www.linkedin.com/in/phamktp/" target="_blank">LinkedIn</a></li>
+			<li><a href="https://github.com/kpthanh01" target="_blank">Github</a></li>
+		</ul>
+		<div class="copyright">Copyright &copy; 2018, Kevin Thanh Pham</div>
+	</footer>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="client.js"></script>
+</body>
+</html>

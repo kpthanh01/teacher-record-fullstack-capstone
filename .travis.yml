@@ -1,0 +1,12 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: wnF6lmGcsBiU+7eSdJfcIrGM9mpIFT7NplXsXz2VdE2i9eFJ/S26mQIHHoMcEMsjrERAvUrZtZn2vM8fZjMaOqp93d2ksH/Y/QgrBIiIUiLOhEKZDepfHIknyMWorT2q9ktKJ19XPIvP8UEpEaxIRrwHR6s3GQjhSRuEQcQaYqIK0bBXgV/cIeliDHf4pDrIwAwHo3WcClahw4ck9XGlkzofeThdItxS2ck8cF3giu0QFFJ/oEitk20dZvdeJ62Px3BSIxyYOTZg4jqcpedVKzq9h0mwgy//IaNyTWKgJ/6Z4BhpZ8ZX0X6ZLOpQygNYY1amvDBasUgeGzYcUbcm4DuiwH8YZvOd5w8jxlmUcIVSgycK4SaM4NgpOtnNe+3gEJruRiGFseiLs8v1tE18ezevyhcGAmc7MEXayuh2BQeMt+9v33zzTl1p08qhnGypwtCZl+wtPuqSeY/Sdv8MOnfWVugQ/J3xAvUENZ5sxc46BROzAGvvQ4ck0DQlOOTVFnJ4XsQViAvXaBn2S5KBLEUkLdraJHebnPIm95f6/3b9DZrgInEHDF/qJWQzzJY0A5SCj0M+iIOfDdzFbk0ouCnLeH6r2HzwAtkclYqYnJzU126hHSprIpqgP1ILFsqWN1sbFscAs1C6UDnIdXoX8jh1YEQNgLxYciBly8nSX2g=
+  app: my-recipes-node-capstone
+  on:
+    repo: kpthanh01/my-recipes-node-capstone
+    branch: master
